@@ -1,0 +1,203 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Así soy yo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* latin */
+        @font-face {
+        font-family: 'Yanone Kaffeesatz';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y976aknfjLm_3lMKjiMgmUUYBs04Y8bH-qHHt6M.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        body {
+            font-family: 'Yanone Kaffeesatz';
+        }
+
+        .container {
+            height:100%;
+        }
+        .pantalla {
+            height:100%;
+            display:none;
+            background:url(fondo_linea_naranja.png);
+            background-position: right;
+            background-repeat: repeat-y;
+            background-size:100%;
+        }
+
+        .headpantalla {
+            background-image: url(headpantalla.png);
+            background-size:100%;
+            background-repeat:no-repeat;
+            background-position: right;
+            height:17px;
+        }
+
+        @media only screen and (min-width: 720px){
+
+            .pantalla {
+                background-size:auto;
+            }
+
+            .headpantalla{
+                background-size:auto;
+                height:34px;
+            }
+        }
+
+
+        button {
+            margin-top:10px;
+        }
+        .perfil {
+            text-align: left;
+            margin-bottom:10px;
+        }
+        .centro {
+            text-align: center;
+        }
+        .btnCircleNaranja {
+            border:0px;
+            background-image: url(btnCircleNaranja.png);
+            background-position-x: center;
+            background-size: 100%;
+            width:150px;
+            height:150px;
+            color:white;
+        }
+        .inputLiviano {
+            border-width:0 0 1px 0;
+            border-color: orange;
+        }
+        .inputCantidad {
+            width:100px;
+            line-height: 20px;
+            height:60px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        #paso1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pantalla" id="paso1" style="display:block;">
+            <div class="headpantalla"></div>
+            <div style="margin-top:70px;">
+                <h3>Ingresa el número de estudiantes:</h3>
+            </div>
+            <div>
+                <input class="inputLiviano inputCantidad" placeholder="(ej: 25)"/>
+            </div>
+            <div>
+                <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+            </div>
+        </div>
+        <div class="pantalla" id="paso2">
+            <div class="headpantalla">
+                <div class="perfil">
+                    <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>
+                </div>
+            </div>
+            <div >
+                <div style="text-align: center">
+                    <img src="WaveHand.gif" width="75%" style="max-width:500px"/>
+                    <h3>Saluda a la audiencia</h3>
+                    <h4>Utiliza la frase:</h4>
+                    <p>"Hoy vamos a aprender algo muy importante"</p>
+                    <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+                </div>
+            </div>
+        </div>
+        <div class="pantalla" id="paso3">
+            <div class="headpantalla">
+                <div class="perfil">
+                        <img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1536863326/tulsaschoolsorg/apujcai7rvaalojiq3jp/students.png" width="50px"/>                    
+                </div>
+            </div>
+            <div style="text-align: center;margin-top:40px;">
+                <img src="https://cdn0.iconfinder.com/data/icons/thin-reading-writing/57/thin-001_compose_write_pencil_new-512.png" width="75%"/>
+                <div>
+                    <h5 class="card-title" style="text-align:center">Escriban su nombre en una hoja de papel</h5>
+                </div>
+                <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+            </div>
+        </div>
+        <div class="pantalla" id="paso4">
+            <div class="headpantalla">
+                <div class="perfil">
+                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                </div>
+            </div>
+            <div style="margin-top:60px;text-align: center">
+                <div>
+                    <h5 class="card-title" style="text-align:center">Elije el estudiante número:<br/><h1>5</h1></h5>
+                </div>
+                <p class="card-text">Pregúntale su nombre</b></p>
+                <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+            </div>
+        </div>
+        <div class="pantalla" id="paso5">
+            <div class="headpantalla">
+                <div class="perfil">
+                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                </div>
+            </div>
+            <div style="margin-top:60px;text-align:center;">
+                <div class="card-header">
+                    <h5 class="card-title" style="text-align:center">Actividad #1:</h5>
+                </div>
+                <p class="card-text">Dibuja: ¿Con quienes vivo?</b></p>
+                <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+            </div>
+        </div>
+        <div class="pantalla" id="paso6">
+            <div class="headpantalla">
+                <div class="perfil">
+                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                </div>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/bb/65/81/bb6581297f4fdcb1b9c4bc94d36b33da.jpg" width="75%"/>
+                <div>
+                    <h5 style="text-align:center">EJEMPLO</h5>
+                </div>
+                <p class="card-text">Comparte el ejemplo con los niños</b></p>
+                <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
+            </div>
+        </div>
+        <div class="pantalla" id="paso7">
+            <div class="headpantalla"></div>
+            <div>
+                <div>
+                    <h5 class="card-title" style="text-align:center">TERMINO</h5>
+                </div>
+                <p class="card-text">Puedes salir de la dinámica</b></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var numPaso = 1;
+        function avanzaPagina(){
+            document.getElementById('paso'+numPaso).style.display = 'none';
+            numPaso=numPaso+1;
+            document.getElementById('paso'+numPaso).style.display = 'block';
+        }
+
+        function finalizoActividad(){
+            return (numPaso==7);
+        }
+    </script>
+</body>
+</html>

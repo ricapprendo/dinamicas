@@ -15,6 +15,10 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
 
+        .fondoPrimario {
+            background-color:#d68a1b;
+        }
+
         body {
             font-family: 'Yanone Kaffeesatz';
         }
@@ -107,15 +111,15 @@
         <div class="pantalla" id="paso2">
             <div class="headpantalla">
                 <div class="perfil">
-                    <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>
+                    <img src="IconitoMaestra.png" width="50px"/>
                 </div>
             </div>
             <div >
                 <div style="text-align: center">
                     <img src="WaveHand.gif" width="75%" style="max-width:500px"/>
-                    <h3>Saluda a la audiencia</h3>
-                    <h4>Utiliza la frase:</h4>
-                    <p>"Hoy vamos a aprender algo muy importante"</p>
+                    <h3 style="font-size:35px;">Saluda a la audiencia</h3>
+                    <h4 style="font-size:30px;">Utiliza la frase:</h4>
+                    <p style="font-size:25px;">"Hoy vamos a aprender algo <br/>muy importante"</p>
                     <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
                 </div>
             </div>
@@ -123,13 +127,13 @@
         <div class="pantalla" id="paso3">
             <div class="headpantalla">
                 <div class="perfil">
-                        <img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1536863326/tulsaschoolsorg/apujcai7rvaalojiq3jp/students.png" width="50px"/>                    
+                        <img src="IconitoAlumnos.png" width="50px"/>                    
                 </div>
             </div>
             <div style="text-align: center;margin-top:40px;">
-                <img src="https://cdn0.iconfinder.com/data/icons/thin-reading-writing/57/thin-001_compose_write_pencil_new-512.png" width="75%"/>
-                <div>
-                    <h5 class="card-title" style="text-align:center">Escriban su nombre en una hoja de papel</h5>
+                <img src="HandWriting.gif" width="75%"/>
+                <div style="margin-bottom:45px;">
+                    <h5 class="card-title" style="text-align:center;font-size:35px;line-height: 1;">Escriban su Nombre<br/> en una hoja de papel</h5>
                 </div>
                 <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
             </div>
@@ -137,53 +141,51 @@
         <div class="pantalla" id="paso4">
             <div class="headpantalla">
                 <div class="perfil">
-                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                        <img src="IconitoMaestra.png" width="50px"/>                    
                 </div>
             </div>
-            <div style="margin-top:60px;text-align: center">
+            <div style="margin-top:140px;text-align: center">
                 <div>
-                    <h5 class="card-title" style="text-align:center">Elije el estudiante número:<br/><h1>5</h1></h5>
+                    <h5 class="card-title" style="text-align:center;font-size:35px;">Elije el estudiante número:<br/><h1 style="font-size:75px;">5</h1></h5>
                 </div>
-                <p class="card-text">Pregúntale su nombre</b></p>
+                <p class="card-text" style="font-size:35px;">Pregúntale su nombre</b></p>
                 <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
             </div>
         </div>
         <div class="pantalla" id="paso5">
             <div class="headpantalla">
                 <div class="perfil">
-                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                        <img src="IconitoMaestra.png" width="50px"/>                    
                 </div>
             </div>
-            <div style="margin-top:60px;text-align:center;">
-                <div class="card-header">
-                    <h5 class="card-title" style="text-align:center">Actividad #1:</h5>
+            <div style="margin-top:120px;text-align:center;">
+                <div >
+                    <label class="card-title fondoPrimario" style="text-align:center;color:#fff;font-size:40px;padding:0 6px;">Actividad #1</label>
                 </div>
-                <p class="card-text">Dibuja: ¿Con quienes vivo?</b></p>
+                <p class="card-text" style="font-size:40px;">Dibuja: <br/>¿Con quienes vivo?</b></p>
                 <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
             </div>
         </div>
         <div class="pantalla" id="paso6">
             <div class="headpantalla">
                 <div class="perfil">
-                        <img src="https://image.freepik.com/free-vector/cartoon-teacher-icon_24911-5128.jpg" width="50px"/>                    
+                        <img src="IconitoMaestra.png" width="50px"/>                    
                 </div>
             </div>
-            <div>
-                <img src="https://i.pinimg.com/originals/bb/65/81/bb6581297f4fdcb1b9c4bc94d36b33da.jpg" width="75%"/>
-                <div>
-                    <h5 style="text-align:center">EJEMPLO</h5>
-                </div>
-                <p class="card-text">Comparte el ejemplo con los niños</b></p>
+            <div style="margin-top:80px;text-align: center;">
+                <img src="Ejemplo01.png" width="75%"/>
+
+                <p class="card-text" style="font-size:40px;line-height: 1;">Muestra el Ejemplo<br/> a los Niños</b></p>
                 <button class="btn btnCircleNaranja avanzaPaso" onclick="avanzaPagina()">Siguiente</button>
             </div>
         </div>
         <div class="pantalla" id="paso7">
             <div class="headpantalla"></div>
-            <div>
-                <div>
-                    <h5 class="card-title" style="text-align:center">TERMINO</h5>
+            <div style="margin-top:140px;">
+                <div style="text-align: center;">
+                    <h5 class="card-title" style="text-align:center;font-size:70px;">Terminó</h5>
+                    <p style="font-size:40px;line-height: 1;">Puedes Salir<br/>de la Dinámica</p>
                 </div>
-                <p class="card-text">Puedes salir de la dinámica</b></p>
             </div>
         </div>
     </div>
